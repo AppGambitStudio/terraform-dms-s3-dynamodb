@@ -1,2 +1,2 @@
-# terraform-dms-s3-dynamodb
-Migrate Large amount of data from S3 CSVs to DynamoDB
+# Load S3 CSVs to DynamoDB Table with AWS DMS
+This Terraform setup is meant to setup the AWS DMS to transfer data stored into S3 CSVs to DynamoDB table. 
