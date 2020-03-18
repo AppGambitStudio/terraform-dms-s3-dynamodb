@@ -9,3 +9,6 @@ This Terraform setup is meant to setup the AWS DMS to transfer data stored into 
 
 ## Upload Data File to S3 
 Import path is set to `employee/` so make sure you save the CSV files under the `<bucket name>/employee/` folder.
+
+## Post Terraform Apply
+Once the AWS DMS is ready, upload the data file into the configured S3 bucket folder and start the DMS task.
