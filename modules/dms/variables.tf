@@ -15,9 +15,9 @@ variable "availability_zones" {
   description = "availability zones"
 }
 
-variable "public_subnet_ids" {
+variable "private_subnet_ids" {
   type        = list
-  description = "public subnet ids"
+  description = "private subnet ids"
 }
 
 variable "security_groups_ids" {

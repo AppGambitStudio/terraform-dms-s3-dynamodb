@@ -3,7 +3,7 @@ resource "aws_dms_replication_subnet_group" "dms_replication_subnet_group" {
   replication_subnet_group_description = "replication subnet group"
   replication_subnet_group_id          = "replication-subnet-group-tf-${var.random_id}"
 
-  subnet_ids = flatten(["${var.public_subnet_ids}"])
+  subnet_ids = flatten(["${var.private_subnet_ids}"])
 
   tags = {
     Name = "dms_replication_subnet_group"
