@@ -85,7 +85,7 @@ resource "aws_dms_endpoint" "csv_to_dynamodb_source" {
     compression_type          = "NONE"
     external_table_definition = "${data.template_file.table_def.rendered}"
     csv_row_delimiter         = "\\n"
-    csv_delimiter             = "."
+    csv_delimiter             = ","
   }
 
   tags = {
